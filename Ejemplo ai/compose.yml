@@ -1,0 +1,15 @@
+services:
+  ai-app:
+    build: .
+    models:
+      - llm
+      - gemma
+      - gpt-oss
+
+models:
+  llm:
+    model: ai/qwen2.5
+  gemma:
+    model: ai/gemma3
+  gpt-oss:
+    model: ai/gpt-oss
